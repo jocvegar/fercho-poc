@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <div id="product-compofnent-1596731849451f"></div>
+    <div id="product-component-1596731849451f"></div>
   </div>
 </template>
 
@@ -13,7 +13,6 @@ export default {
   },
   created: function() {
     var scriptURL = "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
-    
     if (window.ShopifyBuy) {
       if (window.ShopifyBuy.UI) {
         ShopifyBuyInit();
@@ -25,7 +24,7 @@ export default {
     }
 
     function loadScript() {
-      var script = document.createElement('script');
+      var script = document.createElement("script");
       script.async = true;
       script.src = scriptURL;
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
@@ -34,8 +33,8 @@ export default {
 
     function ShopifyBuyInit() {
       var client = ShopifyBuy.buildClient({
-        domain: 'otra-vez-hn.myshopify.com',
-        storefrontAccessToken: '576d5f64e5cfecf689c26cce76d840c7',
+        domain: "otra-vez-hn.myshopify.com",
+        storefrontAccessToken: "576d5f64e5cfecf689c26cce76d840c7",
       });
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('product', {
@@ -43,7 +42,7 @@ export default {
           node: document.getElementById('product-component-1596731849451'),
           moneyFormat: 'L%20%7B%7Bamount%7D%7D',
           options: {
-            "product": {
+            'product': {
               "styles": {
                 "product": {
                   "@media (min-width: 601px)": {
