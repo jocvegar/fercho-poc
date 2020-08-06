@@ -6,17 +6,14 @@
 </template>
 
 <script>
-var scriptURL = "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
-
 export default {
   name: "HelloWorld",
   props: {
     msg: String
   },
   created: function() {
-
+    var scriptURL = "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
     
-
     if (window.ShopifyBuy) {
       if (window.ShopifyBuy.UI) {
         ShopifyBuyInit();
