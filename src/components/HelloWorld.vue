@@ -93,12 +93,12 @@ function ShopifyBuyInit() {
             }
           },
           "text": {
-            "title": "Carrito",
-            "total": "Subtotal",
-            "empty": "Tu carrito esta vacio",
-            "notice": "Confirmar dirreción",
-            "button": "Comprar!",
-            "noteDescription": "Instrucciones"
+            'title': "Carrito",
+            'total': "Subtotal",
+            'empty': "Tu carrito esta vacio",
+            'notice': "Confirmar dirreción",
+            'button': "Comprar!",
+            'noteDescription': "Instrucciones"
           },
           "contents": {
             "note": true
